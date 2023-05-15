@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.page{
+    background-color: #F1F6F9;
+}
+
+.theme-white{
+    color: white
+}
+/* HEADER*/
+
+.header {
+    background-color: #212A3E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 2px 2px 5px black;
+}
+
+.title{
+    font-size: 6.4rem;
+    /*border: 1px orange solid;*/
+    text-align: center;
+    padding: 0;
+    height: 7rem;
+}
+
+.subtitle{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: normal;
+    /*border: red 2px solid;*/
+}
+
+.login-text{
+    position: absolute;
+    top: 5.8rem;
+    right: 51px;
+    font-size: 2.4rem;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    width: 70px;
+    height: 33px;
+    /*border: red 2px solid;*/
+}
+
+.navbar{
+    /*border: 1px blue solid;*/
+    padding-top: 2.7rem;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 30%;
+    width: 70rem;
+    height: 3.5rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.search-bar{
+    border: none;
+    border: none;
+    height: 3rem;
+    width: 90%;
+}
+
+.button-search{
+    /*border: red solid 1px;*/
+    width: 2rem;
+    height: 2.2rem;
+}
+
+.list{
+    /*border: red 1px solid;*/
+    width: 37rem;
+    height: 2rem;
+    align-self: center;
+    margin: 1.5rem auto 2.3rem auto;
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.navbar-text{
+    font-size: 2rem;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+/* OFERTAS*/
+
+.offers{
+    /*border: 1px solid blue;*/
+    background-color: #9BA4B5;
+    height: 49.1rem;
+    width: 100%;
+    margin-top: 4rem;
+    box-shadow: 2px 2px 5px black;
+}
+
+.cards{
+    height: 385px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.offers-title{
+    color: white;
+    width: 100%;
+    height: 6.6rem;
+    font-size: 6.4rem;
+    text-align: center;
+}
+
+.card{
+    width: 40.6rem;
+    height: 38.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1.3rem 0 1.5rem 0;
+    box-shadow: 2px 2px 5px black;
+}
+
+.xbox-card{
+    border: 2px #1ACC16 solid;
+}
+
+.ps-card{
+    border: 2px #236DF6 solid;
+}
+
+.nintendo-card{
+    border: 2px #EF0211 solid;
+}
+
+.card-title{
+    width: 100%;
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.img-game{
+    width: 21.5rem;
+    height: 24rem;
+    margin: 22px auto 16px auto;
+    align-self: center;
+}
+
+.price{
+    width: 9.4rem;
+    height: 1.9rem;
+    font-size: 2rem;
+    font-weight: normal;
+    align-self: center;
+}
+
+.container-buttons{
+    width: 30.2rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.button-box{
+    width: 13rem;
+    height: 2.7rem;
+    padding: 0.5rem 2.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.button-text{
+    font-size: 1.3rem;
+    width: 100%;
+    height: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+    color:black;
+}
+
+.button-xbox{
+    background-color: #1ACC16;
+}
+.button-ps{
+    background-color: #236DF6;
+}
+.button-nintendo{
+    background-color: #EF0211;
+}
+
+.button-car{
+    width: 16rem;
+    height: 2.7rem;
+    background-color: #CCA416;
+}
+
+/*Noticias*/
+
+.notice{
+    background-color: #9BA4B5;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 5rem;
+}
+
+.notice-title{
+    width: 100%;
+    height: 6.6rem;
+    text-align: center;
+    font-size: 6.4rem;
+}
+
+.notice-card{
+    background-color: white;
+    width: 94%;
+    padding: 2rem 4.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 2px 2px 5px black;
+}
+
+.card-title{
+    width: 100%;
+    height: 5.8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.image{
+    width: 67.3rem;
+    height: 40.2rem;
+    align-self: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.notice-text{
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+
+.video{
+    width: 73.6rem;
+    height: 41.3rem;
+    align-self: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.link{
+    font-size: 2rem;
+    color: #4E83E5;
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+
+}
+
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 12.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.8rem 3rem;
+    background-color: #212A3E;
+    box-shadow: 2px 2px 5px black;
+}
+
+.info{
+    width: 25.3rem;
+    height: 6.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.info-text{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+.copyrights{
+    width: 10.6rem;
+    height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.social{
+    width: 9rem;
+    height: 2rem;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.icom{
+    list-style: none;
+    align-items: center;
+}
+
+/*Container de juegos paginas 2 - 3 y 4*/
+
+.cards-container{
+    width: 100%;
+    margin-top: 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+}
+
+.numbers{
+    width: 47.5rem;
+    height: 5rem;
+    margin: 4rem 33% 4rem 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+.box-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+/*----Login------------------------------*/
+
+.login{
+    width: 55%;
+    height: 50rem;
+    margin: 13rem 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form{
+    width: 26.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.text-login{
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2.2rem;
+
+}
+
+.user-login{
+    width: 26.9rem;
+    height: 2.9rem;
+    border-radius: 1rem;
+}
+
+.pass-forget{
+    color: #4E83E5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.login-button{
+    width: 15rem;
+    height: 7.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.button-ingresar{
+    width: 15rem;
+    height: 3rem;
+    margin: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212A3E;
+    align-items: center;
+}
+
+.text-button{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+/*-------------------  XBOX -------------*/
+.page-xbox{
+    background-color: #477E34;
+
+}
+
+.header-xbox{
+    background-color: #68AC43;
+}
+
+.container-cards-xbox{
+    background-color: #184A13;
+}
+
+.footer-xbox{
+    background-color: #68AC43;
+}
+
+/*---------------------- PS -------------------*/
+
+.header-ps{
+    background-color: #00021A;
+}
+
+.container-cards-ps{
+    background-color: #00053F;
+}
+
+.footer-ps{
+    background-color: #00021A;
+}
+
+
+/*---------------------- Nintendo -------------------*/
+
+.header-nintendo{
+    background-color: #FE0016;
+}
+
+.container-cards-nintendo{
+    background-color: #B00005;
+}
+
+.footer-nintendo{
+    background-color: #FE0016;
+}
+
+
+
