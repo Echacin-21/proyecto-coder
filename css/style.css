@@ -9,13 +9,18 @@ html{
     font-size: 62.5%;
 }
 
+a{
+    text-decoration: none;
+}
+
 .page{
     background-color: #F1F6F9;
 }
 
 .theme-white{
-    color: white
+    color: white;
 }
+
 /* HEADER*/
 
 .header {
@@ -24,6 +29,9 @@ html{
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 5px black;
+    position: sticky;
+    top:0;
+    z-index: 4;
 }
 
 .title{
@@ -54,7 +62,16 @@ html{
     /*border: red 2px solid;*/
 }
 
+.m-hamburguesa{
+    display:none;
+}
+
 .search{
+    display: flex;
+
+}
+
+.search-bar{
     box-shadow: 1px 1px 5px #212A3E;
     display: flex;
     justify-content: space-around;
@@ -67,7 +84,7 @@ html{
     border-radius: 5rem;
 }
 
-.search-bar{
+.input-text{
     border: none;
     border: none;
     height: 3rem;
@@ -81,13 +98,12 @@ html{
 }
 
 .list{
-    /*border: red 1px solid;*/
     width: 37rem;
     height: 2rem;
     align-self: center;
-    margin: 1.5rem auto 2.3rem auto;
+    margin: 1.3rem auto 0 auto;
     display: flex;
-    gap: 35px;
+    gap: 3.5rem;
     list-style: none;
 }
 
@@ -95,7 +111,10 @@ html{
     font-size: 2rem;
     font-weight: normal;
     text-decoration: none;
+}
 
+.navbar-text:hover{
+    font-size: 2.2rem;
 }
 
 /* OFERTAS*/
@@ -160,7 +179,6 @@ html{
 .img-game{
     width: 21.5rem;
     height: 24rem;
-    margin: 22px auto 16px auto;
     align-self: center;
 }
 
@@ -176,8 +194,8 @@ html{
     width: 30.2rem;
     height: 2.7rem;
     display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
 .button-link{
@@ -188,39 +206,52 @@ html{
 .button-box{
     width: 13rem;
     height: 2.7rem;
-    padding: 1rem 2.9rem;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 1px 1px 3px black;
+    padding: 0.5rem 2.9rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .button-text{
     font-size: 1.3rem;
-    width: 100%;
-    height: 1.6rem;
     font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    align-self: center;
-    color:black;
+    color: black;
 }
 
 .button-xbox{
     background-color: #1ACC16;
 }
+
+.button-xbox:hover{
+    background-color: #076305;
+    box-shadow: 3px 3px 5px black;
+}
 .button-ps{
     background-color: #236DF6;
 }
+
+.button-ps:hover{
+    background-color: #183e86;
+    box-shadow: 3px 3px 5px black;
+}
+
 .button-nintendo{
     background-color: #EF0211;
 }
 
+.button-nintendo:hover{
+    background-color: #8a040d;
+    box-shadow: 3px 3px 5px black;
+}
+
 .button-car{
-    width: 16rem;
     height: 2.7rem;
     background-color: #CCA416;
+}
+
+.button-car:hover{
+    background-color: #816910;
+    box-shadow: 3px 3px 5px black;
 }
 
 /*Noticias*/
@@ -256,7 +287,7 @@ html{
 .card-title{
     width: 100%;
     height: 5.8rem;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
@@ -283,10 +314,11 @@ html{
 .link{
     font-size: 2rem;
     color: #4E83E5;
-    width: 100%;
-    text-align: right;
-    text-decoration: none;
+    align-self: flex-end;
+}
 
+.link:hover{
+    color: #1b3f81;
 }
 
 
@@ -334,7 +366,6 @@ html{
     justify-self: center;
     display: flex;
     gap: 1.5rem;
-
 }
 
 .icom{
@@ -351,7 +382,6 @@ html{
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    
 }
 
 .numbers{
@@ -368,6 +398,10 @@ html{
     padding: 1.5rem;
     background-color: white;
     box-shadow: 2px 2px 5px black;
+}
+
+.box:hover{
+    background-color: rgb(119, 117, 117);
 }
 
 .box-text{
@@ -387,7 +421,6 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .form{
@@ -395,8 +428,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 .text-login{
@@ -436,7 +467,14 @@ html{
     align-items: center;
     justify-content: center;
     background-color: #212A3E;
+    border: none;
+    border-radius: 10px;
     align-items: center;
+}
+
+.button-ingresar:hover {
+    background-color: #236DF6;
+    box-shadow: 3px 3px 5px black;
 }
 
 .text-button{
@@ -492,5 +530,96 @@ html{
     background-color: #FE0016;
 }
 
+/*------------------------ Pagina en desarrollo---------------------*/
+
+.construccion{
+    height: 100vh;
+    background-color: #cbd1db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.construccion h1{
+    font-size: 2.4rem;
+}
+
+.construccion p {
+    font-size: 1.6rem;
+}
+/*-----------------------------  Querys -----------------------*/
+
+@media   (max-width: 320px) {
+
+    .header{
+        height: 100%;
+    }
+    .title{
+        font-size: 3.2rem;
+        height: 3.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .subtitle{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    .login-text{
+        display: none;
+    }
+
+    .list{
+        display: none;
+    }
 
 
+.m-hamburguesa{
+    display: block;
+    width: 3rem;
+    height: 2.5rem;
+    margin: 2.5rem 1rem 0 1rem;
+} 
+
+.search-bar{
+    width: 80%;
+    margin: 2rem 0 0 0; 
+}
+
+/* OFERTAS*/
+
+.offers{
+    height: 130rem;
+}
+
+.cards{
+    height: 118.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.offers-title{
+    font-size: 3.2rem;
+    height: auto;
+}
+
+.card{
+    width: 88%;
+    padding: 0.5rem;
+}
+
+.card-title{
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-buttons{
+    width: 13rem;
+    height: 5.4rem;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-top: 2rem;
+}
+}
