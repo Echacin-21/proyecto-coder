@@ -551,7 +551,7 @@ a{
 }
 /*-----------------------------  Querys -----------------------*/
 
-@media   (max-width: 320px) {
+@media   (max-width: 426px) {
 
     .header{
         height: 100%;
@@ -612,6 +612,7 @@ a{
 
 .card-title{
     height: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
@@ -622,4 +623,85 @@ a{
     gap:0.5rem;
     margin-top: 2rem;
 }
+
+/*Noticias*/
+
+.notice{
+    padding: 2rem 1rem;
+}
+
+.notice-title{
+    height: auto;
+    font-size: 3.2rem;
+}
+
+.notice-card{
+    background-color: white;
+    width: 94%;
+    padding: 2rem 2rem;
+}
+
+.card-title{
+    height: auto;
+    font-size: 1.7rem;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.notice-text{
+    font-size: 1.8rem;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+}
+
+.link{
+    font-size: 1.6rem;
+    align-self: center;
+}
+
+/*----------Footer-------------------------*/
+
+.footer{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+        "info social"
+        "copyrigths copyrigths";
+}
+
+.info{
+    grid-area: info;
+    width: 100%;
+    gap: 0;
+}
+
+.info-text{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+.copyrights{
+    grid-area: copyrigths;
+    justify-self: center;
+}
+
+.social{
+    grid-area: social;
+}
+
+
+
+
+
+
 }
