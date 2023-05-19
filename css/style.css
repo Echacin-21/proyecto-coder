@@ -124,7 +124,6 @@ a{
     background-color: #9BA4B5;
     height: 49.1rem;
     width: 100%;
-    margin-top: 4rem;
     box-shadow: 2px 2px 5px black;
 }
 
@@ -275,7 +274,7 @@ a{
 .notice-card{
     background-color: white;
     width: 94%;
-    padding: 2rem 4.7rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -300,6 +299,7 @@ a{
 .notice-text{
     font-size: 2.4rem;
     font-weight: normal;
+    margin: 0 2rem;
 }
 
 .video{
@@ -313,6 +313,7 @@ a{
     font-size: 2rem;
     color: #4E83E5;
     align-self: flex-end;
+    margin-right: 2rem;
 }
 
 .link:hover{
@@ -547,9 +548,38 @@ a{
 .construccion p {
     font-size: 1.6rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------  Querys -----------------------*/
 
-@media   (max-width: 426px) {
+@media   (max-width: 650px) {
 
     .header{
         height: 100%;
@@ -574,132 +604,292 @@ a{
     }
 
 
-.m-hamburguesa{
-    display: block;
-    width: 3rem;
-    height: 2.5rem;
-    margin: 2.5rem 1rem 0 1rem;
-} 
+    .m-hamburguesa{
+        display: block;
+        width: 3rem;
+        height: 2.5rem;
+        margin: 2.5rem 1rem 0 1rem;
+    } 
 
-.search-bar{
-    width: 80%;
-    margin: 2rem 0 0 0; 
-}
+    .search-bar{
+        width: 80%;
+        margin: 2rem 0 0 0; 
+    }
 
 /* OFERTAS*/
 
-.offers{
-    height: 130rem;
-}
+    .offers{
+        height: 130rem;
+        margin-top: 2rem;
+    }
 
-.cards{
-    height: 118.9rem;
-    display: flex;
-    flex-direction: column;
-}
+    .cards{
+        height: 118.9rem;
+        display: flex;
+        flex-direction: column;
+    }
 
-.offers-title{
-    font-size: 3.2rem;
-    height: auto;
-}
+    .offers-title{
+        font-size: 3.2rem;
+        height: auto;
+    }
 
-.card{
-    width: 88%;
-    padding: 0.5rem;
-}
+    .card{
+        width: 88%;
+        padding: 0.5rem;
+    }
 
-.card-title{
-    height: 2rem;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-}
+    .card-title{
+        height: 2rem;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
 
-.container-buttons{
-    width: 13rem;
-    height: 5.4rem;
-    flex-direction: column;
-    gap:0.5rem;
-    margin-top: 2rem;
-}
+    .container-buttons{
+        width: 13rem;
+        height: 5.4rem;
+        flex-direction: column;
+        gap:0.5rem;
+        margin-top: 2rem;
+    }
 
 /*Noticias*/
 
-.notice{
-    padding: 2rem 1rem;
-}
+    .notice{
+        padding: 2rem 1rem;
+    }
 
-.notice-title{
-    height: auto;
-    font-size: 3.2rem;
-}
+    .notice-title{
+        height: auto;
+        font-size: 3.2rem;
+    }
 
-.notice-card{
-    background-color: white;
-    width: 94%;
-    padding: 2rem 2rem;
-}
+    .notice-card{
+        background-color: white;
+        width: 94%;
+        padding: 2rem 2rem;
+    }
 
-.card-title{
-    height: auto;
-    font-size: 1.7rem;
-}
+    .card-title{
+        height: auto;
+        font-size: 1.7rem;
+    }
 
-.image{
-    width: 100%;
-    height: auto;
-}
+    .image{
+        width: 100%;
+        height: auto;
+    }
 
-.notice-text{
-    font-size: 1.8rem;
-}
+    .notice-text{
+        font-size: 1.8rem;
+    }
 
-.video{
-    width: 100%;
-    height: auto;
-}
+    .video{
+        width: 100%;
+        height: auto;
+    }
 
-.link{
-    font-size: 1.6rem;
-    align-self: center;
-}
+    .link{
+        font-size: 1.6rem;
+        align-self: center;
+    }
 
 /*----------Footer-------------------------*/
 
-.footer{
+    .footer{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+            "info social"
+            "copyrigths copyrigths";
+    }
+
+    .info{
+        grid-area: info;
+        width: 100%;
+        gap: 0;
+    }
+
+    .info-text{
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .copyrights{
+        grid-area: copyrigths;
+        justify-self: center;
+    }
+
+    .social{
+        grid-area: social;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 470px) and (max-width: 650px){
+    .card{
+        width: 45rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 650px) and (max-width: 830px) {
+
+    .login-text{
+        right: 1.5rem;
+        /*border: red 2px solid;*/
+    }
+
+    .search-bar{
+        width: 80%;
+        margin: 3rem 7rem 0 7rem;
+    }
+
+/* OFERTAS*/
+
+    .offers{
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .cards{
+        height: 86rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card3";
+        justify-items: center;
+        }
+
+    .card{
+        width: 32rem;
+        padding: 0.5rem;
+    }
+
+    .xbox-card{
+        grid-area: card1;
+    }
+
+    .ps-card{
+        grid-area: card2;
+    }
+
+    .nintendo-card{
+        grid-area: card3;
+    }
+
+
+/*********************NOTICES**************************************/
+    .notice{
+        padding: 2rem 1rem;
+    }
+
+    .notice-title{
+        height: auto;
+        font-size: 4.8rem;
+    }
+
+    .notice-card{
+        background-color: white;
+        width: 94%;
+        padding: 2rem 2rem;
+    }
+
+    .card-title{
+        height: auto;
+        font-size: 1.7rem;
+    }
+
+    .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .notice-text{
+        font-size: 1.8rem;
+    }
+
+    .video{
+        width: 100%;
+        height: auto;
+    }
+
+    .link{
+        font-size: 1.6rem;
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 830px) and (max-width: 1230px) {
+
+    .card{
+        width: 30%;
+        padding: 0.5rem;
+    }
+
+    .container-buttons{
+        width: 100%
+    }
+    
+    .button-box{
+        width: 11rem;
+    }
+
+    .notice-title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 4.8rem;
+}
+
+.card-title {
+    height: auto;
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-        "info social"
-        "copyrigths copyrigths";
 }
-
-.info{
-    grid-area: info;
-    width: 100%;
-    gap: 0;
+.video {
+    width: 90%;
+    height: auto;
 }
-
-.info-text{
-    font-size: 1.2rem;
-    font-weight: normal;
-    text-decoration: none;
-    list-style: none;
-}
-
-.copyrights{
-    grid-area: copyrigths;
-    justify-self: center;
-}
-
-.social{
-    grid-area: social;
-}
-
-
-
-
-
 
 }
