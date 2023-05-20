@@ -13,49 +13,207 @@
 
 <body>
     <div class="page ">
-        <header class="header">
+        <header class="bg-dark">
             <h1 class="title theme-white">XPLOIT GAME</h1>
             <h2 class="subtitle theme-white"> Compra video juegos de todas las plataformas al mejor precio</h2>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Seción PC</a>
+                    <a class="navbar-brand text-light" href="../index.html">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link text-light" aria-current="page" href="./xbox.html">XBOX</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./xbox.html">XBOX</a>
+                                <a class="nav-link text-light" href="./ps.html">PlayStation</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./ps.html">PS</a>
+                                <a class="nav-link text-light" href="./nintendo.html">Nintendo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./nintendo.html">Nintendo</a>
+                                <a class="nav-link text-light" href="./pc.html">PC</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pc.html">PC</a>
+                                <a class="nav-link text-light" href="./login.html">Login</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Otros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./construcción.html">Noticias</a></li>
+                                    <li><a class="dropdown-item" href="./construcción.html">Lo último del gamer</a></li>
+                                </ul>
                             </li>
                         </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
             </nav>
         </header>
-        <main class="container-fluid bg-secondary mt-3">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+        <main class="container-fluid mt-3 row justify-content-center">
+            <section id="carouselExampleDark" class="carousel slide w-75 p-3">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-            </nav>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/images/PC/1366_2000.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/PC/tarjeta-grafica.jpg" class="d-block w-100 img-fluid"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/PC/202351810101040_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="container-fluid d-flex flex-wrap w-75 gap-5 justify-content-center mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/PC/1366_2000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego PC</h5>
+                        <p class="card-text">Esto es una pagina en desarrollo, por lo tanto las imágenes son solo de
+                            referencia.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <ul class="info">
+                <li class="info-text theme-white">xploitgames@gmail.com</li>
+                <li class="info-text theme-white">contactate con nosotros: +56 9 0000 0000</li>
+                <li class="info-text theme-white">RM - Santiago, Chile.</li>
+            </ul>
+            <p class="copyrights theme-white">Eduardo Chacin ©</p>
+            <ul class="social">
+                <li class="icom">
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="../assets/images/Twittertwitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li class="icom">
+                    <a href="https://intagram.com" target="_blank">
+                        <img src="../assets/images/Instagraminstagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li class="icom">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="../assets/images/Facebookfacebook.png" alt= "facebook">
+                    </a>
+                </li>
+            </ul>
+    </footer>
 
     </div>
 
