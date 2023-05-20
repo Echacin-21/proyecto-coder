@@ -158,7 +158,7 @@ a {
     width: 37rem;
     height: 2rem;
     align-self: center;
-    margin: 1.3rem auto 0 auto;
+    margin: 1.3rem auto 1rem auto;
     display: flex;
     gap: 3.5rem;
     list-style: none;
@@ -434,17 +434,19 @@ a {
 
 .cards-container {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
 }
 
 .numbers {
     width: 47.5rem;
     height: 5rem;
-    margin: 4rem 33% 4rem 33%;
+    margin: 4rem auto;
     display: flex;
     justify-content: space-between;
 }
@@ -653,6 +655,7 @@ a {
     .subtitle {
         font-size: 1.6rem;
         font-weight: 400;
+        margin-bottom: 1rem;
     }
 
     .login-text {
@@ -753,6 +756,26 @@ a {
         align-self: center;
     }
 
+    .numbers {
+        width: auto;
+        height: auto;
+        margin: 0;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        padding: 0;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .cards-container{
+        margin: 2rem auto;
+        padding: 2rem 0;
+    }
     /*----------Footer-------------------------*/
 
     .footer {
