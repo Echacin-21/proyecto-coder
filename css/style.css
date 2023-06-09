@@ -156,12 +156,12 @@ a {
 }
 
 .list {
-    width: 37rem;
+    width: auto;
     height: 2rem;
-    align-self: center;
     margin: 1.3rem auto 1rem auto;
     display: flex;
-    gap: 3.5rem;
+    justify-content: center;
+    gap: 1.5rem;
     list-style: none;
 }
 
