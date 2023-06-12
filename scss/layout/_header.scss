@@ -1,0 +1,50 @@
+.header {
+    background-color: #212A3E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px black;
+    top: 0;
+    z-index: 4;
+    .title{
+        font-size: 6.4rem;
+        text-align: center;
+        padding: 0;
+        height: 7rem;
+    }
+    .subtitle{
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    .login-text {
+        position: absolute;
+        top: 5.8rem;
+        right: 51px;
+        font-size: 2.4rem;
+        font-weight: normal;
+        text-decoration: none;
+        text-align: right;
+        width: 70px;
+        height: 33px;
+    }
+    .navbar{
+        .list{
+            width: auto;
+            height: 2rem;
+            margin: 1.3rem auto 1rem auto;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style: none;
+            .navbar-text{
+                font-size: 2rem;
+                font-weight: normal;
+                text-decoration: none;
+                &:hover{
+                    font-size: 2.2rem;
+                }
+                }
+            }
+    }
+    }

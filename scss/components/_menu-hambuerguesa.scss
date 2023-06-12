@@ -1,0 +1,60 @@
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin-bottom: 5px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.menu{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: #212A3E;
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+    text-decoration: none;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked~.menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+#toggle-menu:checked~.menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#toggle-menu:checked~.menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+}
+
+#toggle-menu:checked ~ .menu {
+    display: block;
+    /* Otros estilos del menú */
+}
+
+.login-mh{
+    font-size: 2rem;
+}
+
+.m-hamburguesa {
+    display: none;
+}
+
+.search {
+    display: flex;
+    font-family: 'Material Icons';
+
+}
