@@ -1,0 +1,952 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.page {
+  background-color: #F1F6F9; }
+
+.theme-white {
+  color: white; }
+
+.header {
+  background-color: #212A3E;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px black;
+  top: 0;
+  z-index: 4; }
+  .header .title {
+    font-size: 6.4rem;
+    text-align: center;
+    padding: 0;
+    height: 7rem; }
+  .header .subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: normal; }
+  .header .login-text {
+    position: absolute;
+    top: 5.8rem;
+    right: 51px;
+    font-size: 2.4rem;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    width: 70px;
+    height: 33px; }
+  .header .navbar .list {
+    width: auto;
+    height: 2rem;
+    margin: 1.3rem auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none; }
+    .header .navbar .list .navbar-text {
+      font-size: 2rem;
+      font-weight: normal;
+      text-decoration: none; }
+      .header .navbar .list .navbar-text:hover {
+        font-size: 2.2rem; }
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer; }
+  .menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out; }
+
+.menu {
+  width: 15rem;
+  height: auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #212A3E;
+  position: absolute;
+  top: 13rem;
+  left: 2rem;
+  text-decoration: none;
+  display: none; }
+
+#toggle-menu {
+  display: none; }
+
+#toggle-menu:checked ~ .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px); }
+
+#toggle-menu:checked ~ .menu-icon span:nth-child(2) {
+  opacity: 0; }
+
+#toggle-menu:checked ~ .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px); }
+
+#toggle-menu:checked ~ .menu {
+  display: block;
+  /* Otros estilos del menú */ }
+
+.login-mh {
+  font-size: 2rem; }
+
+.m-hamburguesa {
+  display: none; }
+
+.search {
+  display: flex;
+  font-family: 'Material Icons'; }
+
+.search-bar {
+  box-shadow: 1px 1px 5px #212A3E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 2rem 25%;
+  width: 48%;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 5rem; }
+
+
+  .input-text {
+    border: none;
+    height: 3rem;
+    width: 90%;
+}
+
+.button-search {
+    /*border: red solid 1px;*/
+    width: 2rem;
+    height: 2.2rem;
+}
+
+/* OFERTAS*/
+
+.offers {
+    /*border: 1px solid blue;*/
+    background-color: #9BA4B5;
+    height: 49.1rem;
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+}
+
+.cards {
+    height: 385px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.offers-title {
+    color: white;
+    width: 100%;
+    height: 6.6rem;
+    font-size: 6.4rem;
+    text-align: center;
+}
+
+.card {
+    width: 40.6rem;
+    height: 38.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1.3rem 0 1.5rem 0;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+}
+
+.card:hover{
+  border-color: #000;
+  scale: 1.02;
+}
+
+.xbox-card {
+    border: 2px #1ACC16 solid;
+}
+
+.ps-card {
+    border: 2px #236DF6 solid;
+}
+
+.nintendo-card {
+    border: 2px #EF0211 solid;
+}
+
+.card-title {
+    width: 100%;
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.img-game {
+    width: 21.5rem;
+    height: 24rem;
+    align-self: center;
+}
+
+.price {
+    width: 9.4rem;
+    height: 1.9rem;
+    font-size: 2rem;
+    font-weight: normal;
+    align-self: center;
+}
+
+.container-buttons {
+    width: 30.2rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.button-box {
+    width: 13rem;
+    height: 2.7rem;
+    padding: 0;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+}
+
+.button-xbox {
+    background-color: #1ACC16;
+}
+
+.button-xbox:hover {
+    background-color: #076305;
+    box-shadow: 3px 3px 5px black;
+}
+
+.button-ps {
+    background-color: #236DF6;
+}
+
+.button-ps:hover {
+    background-color: #183e86;
+    box-shadow: 3px 3px 5px black;
+}
+
+.button-nintendo {
+    background-color: #EF0211;
+}
+
+.button-nintendo:hover {
+    background-color: #8a040d;
+    box-shadow: 3px 3px 5px black;
+}
+
+.button-car {
+    height: 2.7rem;
+    background-color: #CCA416;
+}
+
+.button-car:hover {
+    background-color: #816910;
+    box-shadow: 3px 3px 5px black;
+}
+
+/*Noticias*/
+
+.notice {
+    background-color: #9BA4B5;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 5rem;
+}
+
+.notice-title {
+    width: 100%;
+    height: 6.6rem;
+    text-align: center;
+    font-size: 6.4rem;
+}
+
+.notice-card {
+    background-color: white;
+    width: 94%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 2px 2px 5px black;
+}
+
+.card-title {
+    width: 100%;
+    height: 5.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.image  {
+    width: 67.3rem;
+    height: 40.2rem;
+    align-self: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.notice-text {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin: 0 2rem;
+}
+
+.video {
+    width: 73.6rem;
+    height: 41.3rem;
+    align-self: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.link {
+    font-size: 2rem;
+    color: #4E83E5;
+    align-self: flex-end;
+    margin-right: 2rem;
+}
+
+.link:hover {
+    color: #1b3f81;
+}
+
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    height: 12.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.8rem 3rem;
+    background-color: #212A3E;
+    box-shadow: 2px 2px 5px black;
+}
+
+.info {
+    width: 25.3rem;
+    height: 6.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+.copyrights {
+    width: 10.6rem;
+    height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.social {
+    width: 9rem;
+    height: 2rem;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icom {
+    list-style: none;
+    align-items: center;
+}
+
+/*Container de juegos paginas 2 - 3 y 4*/
+
+.cards-container {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.numbers {
+    width: 47.5rem;
+    height: 5rem;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+.box:hover {
+    background-color: rgb(119, 117, 117);
+}
+
+.box-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+/*----Login------------------------------*/
+
+.login {
+    width: 55%;
+    height: 50rem;
+    margin: 13rem 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 26.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-login {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2.2rem;
+
+}
+
+.user-login {
+    width: 26.9rem;
+    height: 2.9rem;
+    border-radius: 1rem;
+}
+
+.pass-forget {
+    color: #4E83E5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.login-button {
+    width: 15rem;
+    height: 7.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.button-ingresar {
+    width: 15rem;
+    height: 3rem;
+    margin: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212A3E;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button-ingresar:hover {
+    background-color: #236DF6;
+    box-shadow: 3px 3px 5px black;
+}
+
+.text-button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*-------------------  XBOX -------------*/
+.page-xbox {
+    background-color: #477E34;
+
+}
+
+.header-xbox {
+    background-color: #68AC43;
+}
+
+.container-cards-xbox {
+    background-color: #184A13;
+}
+
+.footer-xbox {
+    background-color: #68AC43;
+}
+
+/*---------------------- PS -------------------*/
+
+.header-ps {
+    background-color: #00021A;
+}
+
+.container-cards-ps {
+    background-color: #00053F;
+}
+
+.footer-ps {
+    background-color: #00021A;
+}
+
+
+/*---------------------- Nintendo -------------------*/
+
+.header-nintendo {
+    background-color: #FE0016;
+}
+
+.container-cards-nintendo {
+    background-color: #B00005;
+}
+
+.footer-nintendo {
+    background-color: #FE0016;
+}
+
+/*------------------------ Pagina en desarrollo---------------------*/
+
+.construccion {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    gap: 1rem;
+}
+
+.construccion h1 {
+    font-size: 2.4rem;
+}
+
+.construccion p {
+    font-size: 1.6rem;
+}
+
+.construccion img{
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------  Querys -----------------------*/
+
+@media (max-width: 650px) {
+
+    .header {
+        height: 100%;
+    }
+
+    .title {
+        font-size: 3.2rem;
+        height: 3.2rem;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .login-text {
+        display: none;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .m-hamburguesa {
+        display: inline;
+        width: 3rem;
+        height: 2.5rem;
+        margin: 2.5rem 1rem 0 1rem;
+    }
+
+    .search-bar {
+        width: 80%;
+        margin: 2rem 0 0 0;
+    }
+
+    /* OFERTAS*/
+
+    .offers {
+        height: 130rem;
+        margin-top: 2rem;
+    }
+
+    .cards {
+        height: 118.9rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offers-title {
+        font-size: 3.2rem;
+        height: auto;
+    }
+
+    .card {
+        width: 88%;
+        padding: 0.5rem;
+    }
+
+    .card-title {
+        height: 2rem;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .container-buttons {
+        width: 13rem;
+        height: 5.4rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    /*Noticias*/
+
+    .notice {
+        padding: 2rem 1rem;
+    }
+
+    .notice-title {
+        height: auto;
+        font-size: 3.2rem;
+    }
+
+    .notice-card {
+        background-color: white;
+        width: 94%;
+        padding: 2rem 2rem;
+    }
+
+    .card-title {
+        height: auto;
+        font-size: 1.7rem;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .notice-text {
+        font-size: 1.8rem;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .link {
+        font-size: 1.6rem;
+        align-self: center;
+    }
+
+    .numbers {
+        width: auto;
+        height: auto;
+        margin: 0;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        padding: 0;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .cards-container{
+        margin: 2rem auto;
+        padding: 2rem 0;
+    }
+    /*----------Footer-------------------------*/
+
+    .footer {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "info social"
+            "copyrigths copyrigths";
+    }
+
+    .info {
+        grid-area: info;
+        width: 100%;
+        gap: 0;
+    }
+
+    .info-text {
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .copyrights {
+        grid-area: copyrigths;
+        justify-self: center;
+    }
+
+    .social {
+        grid-area: social;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 470px) and (max-width: 650px) {
+    .card {
+        width: 45rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 650px) and (max-width: 830px) {
+
+    .login-text {
+        right: 1.5rem;
+        /*border: red 2px solid;*/
+    }
+
+    .search-bar {
+        width: 80%;
+        margin: 3rem 7rem 0 7rem;
+    }
+
+    /* OFERTAS*/
+
+    .offers {
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .cards {
+        height: 86rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card3";
+        justify-items: center;
+    }
+
+    .card {
+        width: 32rem;
+        padding: 0.5rem;
+    }
+
+    .xbox-card {
+        grid-area: card1;
+    }
+
+    .ps-card {
+        grid-area: card2;
+    }
+
+    .nintendo-card {
+        grid-area: card3;
+    }
+
+
+    /*********************NOTICES**************************************/
+    .notice {
+        padding: 2rem 1rem;
+    }
+
+    .notice-title {
+        height: auto;
+        font-size: 4.8rem;
+    }
+
+    .notice-card {
+        background-color: white;
+        width: 94%;
+        padding: 2rem 2rem;
+    }
+
+    .card-title {
+        height: auto;
+        font-size: 1.7rem;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .notice-text {
+        font-size: 1.8rem;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .link {
+        font-size: 1.6rem;
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 830px) and (max-width: 1230px) {
+
+    .card {
+        width: 30%;
+        padding: 0.5rem;
+    }
+
+    .container-buttons {
+        width: 100%
+    }
+
+    .button-box {
+        width: 11rem;
+    }
+
+    .notice-title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 4.8rem;
+    }
+
+    .card-title {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .video {
+        width: 90%;
+        height: auto;
+    }
+
+}
