@@ -177,6 +177,7 @@ a {
 
 .card:hover{
   border-color: #000;
+  box-shadow: 0px -2px 88px 6px rgba(0,0,0,0.61);
   scale: 1.02;
 }
 
@@ -245,7 +246,7 @@ a {
 }
 
 .button-xbox:hover {
-    background-color: #076305;
+    background-color: #049d01;
     box-shadow: 3px 3px 5px black;
 }
 
@@ -254,7 +255,7 @@ a {
 }
 
 .button-ps:hover {
-    background-color: #183e86;
+    background-color: #0646bd;
     box-shadow: 3px 3px 5px black;
 }
 
@@ -263,7 +264,7 @@ a {
 }
 
 .button-nintendo:hover {
-    background-color: #8a040d;
+    background-color: #ac000c;
     box-shadow: 3px 3px 5px black;
 }
 
@@ -273,7 +274,7 @@ a {
 }
 
 .button-car:hover {
-    background-color: #816910;
+    background-color: #ad8803;
     box-shadow: 3px 3px 5px black;
 }
 
@@ -425,10 +426,11 @@ a {
     padding: 1.5rem;
     background-color: white;
     box-shadow: 2px 2px 5px black;
+    border-radius: 1rem;
 }
 
 .box:hover {
-    background-color: rgb(119, 117, 117);
+    background-color: rgb(201, 197, 197);
 }
 
 .box-text {
